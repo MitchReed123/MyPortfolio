@@ -1,0 +1,44 @@
+[debug] [2020-05-13T20:47:00.745Z] ----------------------------------------------------------------------
+[debug] [2020-05-13T20:47:00.748Z] Command:       /usr/local/bin/firebase /Users/mitchellreed/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2020-05-13T20:47:00.748Z] CLI Version:   8.2.0
+[debug] [2020-05-13T20:47:00.748Z] Platform:      darwin
+[debug] [2020-05-13T20:47:00.748Z] Node Version:  v12.16.1
+[debug] [2020-05-13T20:47:00.752Z] Time:          Wed May 13 2020 16:47:00 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-13T20:47:00.752Z] ----------------------------------------------------------------------
+[debug] [2020-05-13T20:47:00.752Z] 
+[debug] [2020-05-13T20:47:00.760Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-13T20:47:00.761Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mitchellreed/Desktop/OldPortfolio-master
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-05-13T20:47:12.148Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-05-13T20:47:12.148Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-05-13T20:47:12.424Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 13 May 2020 20:47:12 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-13T20:47:12.435Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-05-13T20:47:12.841Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 13 May 2020 20:47:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-13T20:47:24.495Z] TypeError: Cannot read property 'setRawMode' of null
+    at ReadStream.setRawMode (tty.js:75:28)
+    at Interface._setRawMode (readline.js:283:16)
+    at Interface.close (readline.js:406:10)
+    at ReadStream.ontermend (readline.js:194:10)
+    at ReadStream.emit (events.js:323:22)
+    at ReadStream.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1204:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
